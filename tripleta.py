@@ -1,8 +1,9 @@
 import random
 from time import time
 from memory_profiler import profile
+# ejemplo para entender complejidad
 @profile
-def FuerzaBruta():
+def tripleta():
     a=[]
     print('Ingrese cuantos numeros aleatorios desea insertar')
     n=int(input())
@@ -19,11 +20,12 @@ def FuerzaBruta():
             while k < l:
                 if ((a[i] + a[j] + a[k]) == 0):
                     count +=1
-                    print('Tripleta '+str(count)+': '+str(a[i])+' , '+str(a[j])+' , '+str(a[k]))
+                    #print('Tripleta '+str(count)+': '+str(a[i])+' , '+str(a[j])+' , '+str(a[k]))
                 k+=1
             j+=1
         i+=1
     elapsed_time = time() - start_time
-    print("Elapsed time: %.20f seconds." % elapsed_time)
+    print('La lista con '+str(l)+' numeros, tiene '+str(count)+' tripletas')
+    print("Tiempo trascurrido: %.20f seconds." % elapsed_time)
 
-FuerzaBruta()
+tripleta()

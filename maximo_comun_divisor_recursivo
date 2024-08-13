@@ -1,0 +1,10 @@
+def maximo_comun_divisor_recursivo(a, b):
+    if b == 0: # caso base
+        return a
+    return maximo_comun_divisor_recursivo(b, a % b) #caso recursivo
+
+print('Funcion para hallar maximo comun divisor')
+a=int(input('a:'))
+b=int(input('b:'))
+mcd=maximo_comun_divisor_recursivo(a, b)
+print('mcd('+str(a)+', '+str(b)+') = '+str(mcd))
