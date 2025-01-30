@@ -29,7 +29,7 @@ print(sys.getsizeof(set([1])))
 print(sys.getsizeof(set([1, 2, 3, 4])))
 #Diccionario
 print('Tipo Diccionario:')
-mi_diccionario = {"clave1": "valor1", "clave2": 42, "clave3": [1, 2, 3]}
+mi_diccionario = {"clave1": "valor1", "clave2": 42, "clave3": [1, 2, 3], "clave4": 3.141516}
 print(mi_diccionario)
 print(mi_diccionario["clave1"])  # Imprime "valor1"
 print(mi_diccionario["clave2"])  # Imprime 42
